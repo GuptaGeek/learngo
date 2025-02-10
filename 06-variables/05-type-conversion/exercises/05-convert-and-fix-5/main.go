@@ -27,6 +27,7 @@ func main() {
 	// DO NOT TOUCH THESE VARIABLES
 	min := int8(127)
 	max := int16(1000)
+	max=32767
 
 	// FIX THE CODE HERE
 	fmt.Println(int8(max) + min)
