@@ -7,7 +7,7 @@
 // Follow me on twitter: https://twitter.com/inancgumus
 
 package main
-
+import "fmt"
 // ---------------------------------------------------------
 // EXERCISE: Make It Blue
 //
@@ -27,4 +27,7 @@ func main() {
 	// ADD YOUR CODE BELOW:
 
 	// ?
+	color:="green"
+	color="blue"
+	fmt.Println(color)
 }
