@@ -18,6 +18,6 @@ package main
 // ---------------------------------------------------------
 
 func main() {
-	// age := 2
-	// fmt.Println(int(7.5) + int(age))
+	age := 2
+	 fmt.Println(int(7.5) + age)
 }
