@@ -31,6 +31,9 @@ func main() {
 	// Declares a new float64 variable
 	// 0. means 0.0
 	n := 0.
+	v:=3.14
+	a:=2
+	n=v*float64(a)
 
 	// ADD YOUR CODE BELOW
 
