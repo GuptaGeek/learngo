@@ -7,7 +7,7 @@
 // Follow me on twitter: https://twitter.com/inancgumus
 
 package main
-
+import "fmt"
 // ---------------------------------------------------------
 // EXERCISE: Print the Temperature
 //
@@ -22,5 +22,6 @@ package main
 // ---------------------------------------------------------
 
 func main() {
-	// ?
+	temp:=29.5
+	fmt.Printf("Temperature is %.1f degrees",temp)
 }
