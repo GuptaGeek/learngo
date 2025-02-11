@@ -7,7 +7,7 @@
 // Follow me on twitter: https://twitter.com/inancgumus
 
 package main
-
+import "fmt"
 // ---------------------------------------------------------
 // STORY
 //
@@ -53,4 +53,14 @@ package main
 // ---------------------------------------------------------
 
 func main() {
-}
+  age:=os.Args[1]
+  if age>17{
+    fmt.Println("R-Rated")
+    } else if age>=13 && age<=17{
+     fmt.Println("PG-13")
+    }else if age<13{
+    fmt.Println("PG-Rated")
+    }else{
+    fmt.Println("Wrong age: \"%v\" ",age)
+    }
+    
