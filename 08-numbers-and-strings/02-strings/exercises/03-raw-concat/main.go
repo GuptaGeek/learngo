@@ -34,13 +34,13 @@ import "fmt"
 
 func main() {
 	// uncomment the code below
-	// name := "and get the name from the command-line"
+	 name := "and get the name from the command-line"
 
 	// replace and concatenate the `name` variable
 	// after `hi ` below
 
-	msg := `hi CONCATENATE-NAME-VARIABLE-HERE!
-how are you?`
+	msg := `hi `+name+"!"
+`how are you?`
 
 	fmt.Println(msg)
 }
