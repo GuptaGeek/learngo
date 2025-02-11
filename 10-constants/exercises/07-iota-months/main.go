@@ -26,10 +26,16 @@ import "fmt"
 // ---------------------------------------------------------
 
 func main() {
+	const(
+		max=9
+	)
 	const (
-		Nov = 11
-		Oct = 10
-		Sep = 9
+		// Nov = 11
+		// Oct = 10
+		Sep = max+iota
+		
+		Oct=max+iota
+		Nov =max+iota
 	)
 
 	fmt.Println(Sep, Oct, Nov)
