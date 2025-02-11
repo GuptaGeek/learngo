@@ -7,7 +7,10 @@
 // Follow me on twitter: https://twitter.com/inancgumus
 
 package main
-
+import (
+	"fmt"
+	"os"
+	)
 // ---------------------------------------------------------
 // EXERCISE: Greet More People
 //
@@ -29,8 +32,18 @@ package main
 
 func main() {
 	// TYPE YOUR CODE HERE
-
+        fmt.Println("There are 3 people!")
+	fmt.Println("Hello great ",os.Args[1],"!")
+	fmt.Println("Hello great ",os.Args[2]," !")
+	fmt.Println("Hello great ",os.Args[3]," !")
+	fmt.Println("Nice to meet you")
 	// BONUS #1:
 	// Observe the error if you pass less then 3 arguments.
 	// Search on the web how to solve that.
+	args:=os.Args
+	count:=len(args)-1
+	if count<3{
+		return 
+		}
+	
 }
