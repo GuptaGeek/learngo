@@ -12,6 +12,7 @@ import (
 	"fmt"
 	"os"
 	"strings"
+	"unicode/utf8"
 )
 
 // ---------------------------------------------------------
@@ -29,8 +30,8 @@ import (
 
 func main() {
 	msg := os.Args[1]
-
-	s := msg + strings.Repeat("!", len(msg))
+        count:=utf8.RuneCountInString(msg)
+	s := msg + strings.Repeat("!", count)
 
 	fmt.Println(s)
 }
