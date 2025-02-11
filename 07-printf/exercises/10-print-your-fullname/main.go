@@ -7,7 +7,7 @@
 // Follow me on twitter: https://twitter.com/inancgumus
 
 package main
-
+import "fmt"
 // ---------------------------------------------------------
 // EXERCISE: Print Your Fullname
 //
@@ -23,4 +23,7 @@ package main
 
 func main() {
 	// BONUS: Use a variable for the format specifier
+	firstname:="sheetal"
+	lastname:="gupta"
+	fmt.Printf("Your name is %s and your lastname is %s",firstname,lastname)
 }
