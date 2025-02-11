@@ -7,7 +7,10 @@
 // Follow me on twitter: https://twitter.com/inancgumus
 
 package main
-
+import(
+	"fmt"
+	"os"
+	)
 // ---------------------------------------------------------
 // EXERCISE: Greet 5 People
 //
@@ -33,4 +36,19 @@ package main
 
 func main() {
 	// TYPE YOUR CODE HERE
+	var(
+		l:=os.Args
+		n1:=os.Args[1]
+		n2:=os.Args[2]
+		n3:=os.Args[3]
+		n4:=os.Args[4]
+		n5:=os.Args[5]
+		)
+	fmt.Println("There are",(l-1),"people!)
+        fmt.Println("Hello great ",n1 ," !")
+	fmt.Println("Hello great ",n2," !")
+	fmt.Println("Hello great ",n3," !")
+        fmt.Println("Hello great ",n4," !")
+	 fmt.Println("Hello great ",n5," !")
+	fmt.Println("Nice to meet you all")
 }
