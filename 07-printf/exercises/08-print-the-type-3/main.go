@@ -7,7 +7,7 @@
 // Follow me on twitter: https://twitter.com/inancgumus
 
 package main
-
+import "fmt"
 // ---------------------------------------------------------
 // EXERCISE: Print the Type #3
 //
@@ -18,5 +18,6 @@ package main
 // ---------------------------------------------------------
 
 func main() {
-	// ?
+	str:="hello"
+	fmt.Printf("Type of %s is %T",str,str)
 }
