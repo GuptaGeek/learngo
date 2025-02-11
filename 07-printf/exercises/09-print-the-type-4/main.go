@@ -7,7 +7,7 @@
 // Follow me on twitter: https://twitter.com/inancgumus
 
 package main
-
+import "fmt"
 // ---------------------------------------------------------
 // EXERCISE: Print the Type #4
 //  Print the type and value of true using fmt.Printf
@@ -17,5 +17,6 @@ package main
 // ---------------------------------------------------------
 
 func main() {
-	// ?
+	check:=true
+	fmt.Printf("Type of %v is %T",check,check)
 }
