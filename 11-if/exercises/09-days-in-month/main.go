@@ -7,6 +7,9 @@
 // Follow me on twitter: https://twitter.com/inancgumus
 
 package main
+import(
+  "fmt"
+  )
 
 // ---------------------------------------------------------
 // EXERCISE: Days in a Month
@@ -88,4 +91,59 @@ package main
 // ---------------------------------------------------------
 
 func main() {
+  args1:=os.Args[1]
+  args2:=os.Args[2]
+  length:=len(os.Args)
+  if length<3 ||length>3{
+    fmt.Println("invalid input")
+    return
+    }
+  
+  b:=strings.ToLower(args2)
+  switch b {
+    case "january":
+     fmt.Printf("\"%s\" has 31 days\n",args2)
+    case "february":
+    if  isleapyear(args1) {
+     fmt.Printf("\"%s\" has 29 days\n",args2)
+      }else{
+       fmt.Printf("\"%s\" has 28 days\n",args2)
+      }
+    case "march":
+     fmt.Printf("\"%s\" has 31 days\n",args2)
+    case "april":
+     fmt.Printf("\"%s\" has 30 days\n",args2)
+    case "may":
+     fmt.Printf("\"%s\" has 31 days\n",args2)
+    case "june":
+     fmt.Printf("\"%s\" has 30 days\n",args2)
+    case "july":
+    fmt.Printf("\"%s\" has 31 days\n",args2)
+    case "august":
+    fmt.Printf("\"%s\" has 31 days\n",args2)
+    case "september":
+    fmt.Printf("\"%s\" has 30 days\n",args2)
+    case "october":
+    fmt.Printf("\"%s\" has 31 days\n",args2)
+    case "november":
+    fmt.Printf("\"%s\" has 30 days\n",args2)
+    
+    case "december":
+    fmt.Printf("\"%s\" has 31 days\n",args2)
+    default:
+    fmt.Println("INAVLID INPUT")
+  
 }
+  func isleapyear(year int)bool{
+    if year%4 == 0 {
+        if year%100 == 0 {
+            if year%400 == 0 {
+                return true
+            }
+            return false
+        }
+        return true
+    }
+    return false
+  }
+    
